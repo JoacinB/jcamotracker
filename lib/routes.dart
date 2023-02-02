@@ -9,8 +9,8 @@ class Routes extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List<Widget> myList = [
+      const Progression(),
       const WeaponChallenges(),
-      const Progression()
     ];
     return myList[index];
   }
