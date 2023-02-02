@@ -22,6 +22,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
       },
       type: BottomNavigationBarType.fixed,
       unselectedItemColor: Colors.grey,
+      selectedLabelStyle: const TextStyle(fontWeight: FontWeight.bold),
       selectedItemColor: const Color.fromRGBO(118, 186, 43, 1.0),
       backgroundColor: Colors.black,
       items: const [
@@ -31,7 +32,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.list),
-          label: 'Challenges'
+          label: 'Challenges',
         ),
       ]
     );

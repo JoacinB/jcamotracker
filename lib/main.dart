@@ -42,10 +42,18 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: const AppTopBar(),
-      bottomNavigationBar: myBNB,
-      body: Routes(index: index),
+    return Theme(
+      data: Theme.of(context).copyWith(
+        splashColor: Colors.transparent,
+        highlightColor: Colors.transparent,
+        bottomNavigationBarTheme: const BottomNavigationBarThemeData(),
+      ),
+      child: Scaffold(
+        backgroundColor: const Color.fromARGB(255, 12, 14, 12),
+        appBar: const AppTopBar(),
+        bottomNavigationBar: myBNB,
+        body: Routes(index: index),
+      ),
     );
   }
 }
