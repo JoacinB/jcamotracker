@@ -34,6 +34,10 @@ class _BottomNavBarState extends State<BottomNavBar> {
           icon: Icon(Icons.list),
           label: 'Challenges',
         ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.exposure_plus_1_sharp),
+          label: 'Counter',
+        ),
       ]
     );
   }

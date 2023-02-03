@@ -1,5 +1,6 @@
 import 'package:cod_camo_tracker/progression.dart';
 import 'package:cod_camo_tracker/weapon_challenges.dart';
+import 'package:cod_camo_tracker/contador.dart';
 import 'package:flutter/material.dart';
 
 class Routes extends StatelessWidget {
@@ -11,6 +12,7 @@ class Routes extends StatelessWidget {
     List<Widget> myList = [
       const Progression(),
       const WeaponChallenges(),
+      const Contador(),
     ];
     return myList[index];
   }
