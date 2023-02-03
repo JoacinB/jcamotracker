@@ -51,7 +51,16 @@ class _HomePageState extends State<HomePage> {
       child: Scaffold(
         backgroundColor: const Color.fromARGB(255, 12, 14, 12),
         appBar: const AppTopBar(),
-        bottomNavigationBar: myBNB,
+        bottomNavigationBar: Container(
+          decoration: const BoxDecoration(
+            border: Border(
+              top: BorderSide(
+                color: Color.fromRGBO(118, 186, 43, 1.0),
+                width: 1
+              )
+            )
+          ),
+          child: myBNB),
         body: Routes(index: index),
       ),
     );
