@@ -540,6 +540,7 @@ class _WeaponChallengesState extends State<WeaponChallenges> {
       expandedHeaderPadding: const EdgeInsets.only(bottom: 3),
       children: steps.map<ExpansionPanelRadio>((Step step) {
         return ExpansionPanelRadio(
+          canTapOnHeader: true,
           backgroundColor: const Color.fromARGB(255, 22, 22, 22),
           headerBuilder: (BuildContext context, bool isExpanded) {
             return ListTile(
