@@ -536,6 +536,8 @@ class _WeaponChallengesState extends State<WeaponChallenges> {
 
     Widget _buildPanel(List<Step> steps) {
     return ExpansionPanelList.radio(
+      dividerColor: const Color.fromARGB(255, 107, 138, 77),
+      expandedHeaderPadding: const EdgeInsets.only(bottom: 3),
       children: steps.map<ExpansionPanelRadio>((Step step) {
         return ExpansionPanelRadio(
           backgroundColor: const Color.fromARGB(255, 22, 22, 22),
