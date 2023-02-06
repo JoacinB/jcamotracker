@@ -9,7 +9,12 @@ class Progreso extends StatefulWidget {
 }
 
 class _ProgresoState extends State<Progreso> {
-  List<bool> _isExpanded = [false, false];
+  bool? checkbox1Value = false;
+  bool? checkbox2Value = false;
+  bool? checkbox3Value = false;
+  bool? checkbox4Value = false;
+  bool? checkbox5Value = false;
+  bool? checkbox6Value = false;
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -176,216 +181,186 @@ class _ProgresoState extends State<Progreso> {
                       title: Text('Assault Rifles',
                           style: TextStyle(
                               fontWeight: FontWeight.bold,
+                              fontSize: 18,
                               color: Colors.white)),
                     );
                   },
-                  body: CheckboxListTile(
-                    value: false,
-                    onChanged: (value) {
-                      // do something with value
-                    },
-                    title: const Text('Checkbox 1',
-                        style: TextStyle(color: Colors.white)),
-                  ),
-                ),
-                ExpansionPanelRadio(
-                  canTapOnHeader: true,
-                  backgroundColor: const Color.fromARGB(255, 22, 22, 22),
-                  value: 1,
-                  headerBuilder: (BuildContext context, bool isExpanded) {
-                    return const ListTile(
-                      title: Text('Battle Rifles',
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white)),
-                    );
-                  },
-                  body: CheckboxListTile(
-                    value: false,
-                    onChanged: (value) {
-                      // do something with value
-                    },
-                    title: const Text('Checkbox 2',
-                        style: TextStyle(color: Colors.white)),
-                  ),
-                ),
-                ExpansionPanelRadio(
-                  canTapOnHeader: true,
-                  backgroundColor: const Color.fromARGB(255, 22, 22, 22),
-                  value: 2,
-                  headerBuilder: (BuildContext context, bool isExpanded) {
-                    return const ListTile(
-                      title: Text('SMGs',
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white)),
-                    );
-                  },
-                  body: CheckboxListTile(
-                    value: false,
-                    onChanged: (value) {
-                      // do something with value
-                    },
-                    title: const Text('Checkbox 2',
-                        style: TextStyle(color: Colors.white)),
-                  ),
-                ),
-                ExpansionPanelRadio(
-                  canTapOnHeader: true,
-                  backgroundColor: const Color.fromARGB(255, 22, 22, 22),
-                  value: 3,
-                  headerBuilder: (BuildContext context, bool isExpanded) {
-                    return const ListTile(
-                      title: Text('LMGs',
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white)),
-                    );
-                  },
-                  body: CheckboxListTile(
-                    value: false,
-                    onChanged: (value) {
-                      // do something with value
-                    },
-                    title: const Text('Checkbox 2',
-                        style: TextStyle(color: Colors.white)),
-                  ),
-                ),
-                ExpansionPanelRadio(
-                  canTapOnHeader: true,
-                  backgroundColor: const Color.fromARGB(255, 22, 22, 22),
-                  value: 4,
-                  headerBuilder: (BuildContext context, bool isExpanded) {
-                    return const ListTile(
-                      title: Text('Shotguns',
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white)),
-                    );
-                  },
-                  body: CheckboxListTile(
-                    value: false,
-                    onChanged: (value) {
-                      // do something with value
-                    },
-                    title: const Text('Checkbox 2',
-                        style: TextStyle(color: Colors.white)),
-                  ),
-                ),
-                ExpansionPanelRadio(
-                  canTapOnHeader: true,
-                  backgroundColor: const Color.fromARGB(255, 22, 22, 22),
-                  value: 5,
-                  headerBuilder: (BuildContext context, bool isExpanded) {
-                    return const ListTile(
-                      title: Text('Marksman Rifles',
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white)),
-                    );
-                  },
-                  body: CheckboxListTile(
-                    value: false,
-                    onChanged: (value) {
-                      // do something with value
-                    },
-                    title: const Text('Checkbox 2',
-                        style: TextStyle(color: Colors.white)),
-                  ),
-                ),
-                ExpansionPanelRadio(
-                  canTapOnHeader: true,
-                  backgroundColor: const Color.fromARGB(255, 22, 22, 22),
-                  value: 6,
-                  headerBuilder: (BuildContext context, bool isExpanded) {
-                    return const ListTile(
-                      title: Text('Sniper Rifles',
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white)),
-                    );
-                  },
-                  body: CheckboxListTile(
-                    value: false,
-                    onChanged: (value) {
-                      // do something with value
-                    },
-                    title: const Text('Checkbox 2',
-                        style: TextStyle(color: Colors.white)),
-                  ),
-                ),
-                ExpansionPanelRadio(
-                  canTapOnHeader: true,
-                  backgroundColor: const Color.fromARGB(255, 22, 22, 22),
-                  value: 7,
-                  headerBuilder: (BuildContext context, bool isExpanded) {
-                    return const ListTile(
-                      title: Text('Handguns',
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white)),
-                    );
-                  },
-                  body: CheckboxListTile(
-                    value: false,
-                    onChanged: (value) {
-                      // do something with value
-                    },
-                    title: const Text('Checkbox 2',
-                        style: TextStyle(color: Colors.white)),
-                  ),
-                ),
-                ExpansionPanelRadio(
-                  canTapOnHeader: true,
-                  backgroundColor: const Color.fromARGB(255, 22, 22, 22),
-                  value: 8,
-                  headerBuilder: (BuildContext context, bool isExpanded) {
-                    return const ListTile(
-                      title: Text('Launchers',
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white)),
-                    );
-                  },
-                  body: CheckboxListTile(
-                    value: false,
-                    onChanged: (value) {
-                      // do something with value
-                    },
-                    title: const Text('Checkbox 2',
-                        style: TextStyle(color: Colors.white)),
-                  ),
-                ),
-                ExpansionPanelRadio(
-                  canTapOnHeader: true,
-                  backgroundColor: const Color.fromARGB(255, 22, 22, 22),
-                  value: 9,
-                  headerBuilder: (BuildContext context, bool isExpanded) {
-                    return const ListTile(
-                      title: Text('Melee',
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white)),
-                    );
-                  },
-                  body: CheckboxListTile(
-                    value: false,
-                    onChanged: (value) {
-                      // do something with value
-                    },
-                    title: const Text('Checkbox 2',
-                        style: TextStyle(color: Colors.white)),
+                  body: Column(
+                    children: [
+                      Row(
+                        mainAxisSize: MainAxisSize.max,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Container(
+                              margin:
+                                  const EdgeInsets.only(left: 30),
+                              child: const Text('M4',
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.w600,
+                                      fontSize: 15,
+                                      color: Colors.grey))),
+                          Expanded(
+                            child: Wrap(
+                              spacing: 0,
+                              runSpacing: 0,
+                              alignment: WrapAlignment.spaceEvenly,
+                              crossAxisAlignment: WrapCrossAlignment.end,
+                              direction: Axis.horizontal,
+                              runAlignment: WrapAlignment.start,
+                              verticalDirection: VerticalDirection.down,
+                              clipBehavior: Clip.none,
+                              children: [
+                                Theme(
+                                  data: ThemeData(
+                                    checkboxTheme: CheckboxThemeData(
+                                      shape: RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.circular(5),
+                                      ),
+                                    ),
+                                    unselectedWidgetColor: Colors.white,
+                                  ),
+                                  child: Checkbox(
+                                      value: checkbox1Value ??= false,
+                                      onChanged: (newValue) async {
+                                        setState(
+                                            () => checkbox1Value = newValue!);
+                                      },
+                                      activeColor: const Color.fromRGBO(
+                                          118, 186, 43, 1.0)),
+                                ),
+                                Theme(
+                                  data: ThemeData(
+                                    checkboxTheme: CheckboxThemeData(
+                                      shape: RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.circular(5),
+                                      ),
+                                    ),
+                                    unselectedWidgetColor: Colors.white,
+                                  ),
+                                  child: Checkbox(
+                                      value: checkbox2Value ??= false,
+                                      onChanged: (newValue) async {
+                                        setState(
+                                            () => checkbox2Value = newValue!);
+                                      },
+                                      activeColor: const Color.fromRGBO(
+                                          118, 186, 43, 1.0)),
+                                ),
+                                Theme(
+                                  data: ThemeData(
+                                    checkboxTheme: CheckboxThemeData(
+                                      shape: RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.circular(5),
+                                      ),
+                                    ),
+                                    unselectedWidgetColor: Colors.white,
+                                  ),
+                                  child: Checkbox(
+                                    value: checkbox3Value ??= false,
+                                    onChanged: (newValue) async {
+                                      setState(
+                                          () => checkbox3Value = newValue!);
+                                    },
+                                    activeColor:
+                                        const Color.fromRGBO(118, 186, 43, 1.0),
+                                    checkColor: Colors.white,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                      Row(
+                        mainAxisSize: MainAxisSize.max,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Container(
+                              margin:
+                                  const EdgeInsets.only(left: 30),
+                              child: const Text('TAQ-56',
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.w600,
+                                      fontSize: 15,
+                                      color: Colors.grey))),
+                          Expanded(
+                            child: Wrap(
+                              spacing: 0,
+                              runSpacing: 0,
+                              alignment: WrapAlignment.spaceEvenly,
+                              crossAxisAlignment: WrapCrossAlignment.end,
+                              direction: Axis.horizontal,
+                              runAlignment: WrapAlignment.start,
+                              verticalDirection: VerticalDirection.down,
+                              clipBehavior: Clip.none,
+                              children: [
+                                Theme(
+                                  data: ThemeData(
+                                    checkboxTheme: CheckboxThemeData(
+                                      shape: RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.circular(5),
+                                      ),
+                                    ),
+                                    unselectedWidgetColor: Colors.white,
+                                  ),
+                                  child: Checkbox(
+                                      value: checkbox4Value ??= false,
+                                      onChanged: (newValue) async {
+                                        setState(
+                                            () => checkbox4Value = newValue!);
+                                      },
+                                      activeColor: const Color.fromRGBO(
+                                          118, 186, 43, 1.0)),
+                                ),
+                                Theme(
+                                  data: ThemeData(
+                                    checkboxTheme: CheckboxThemeData(
+                                      shape: RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.circular(5),
+                                      ),
+                                    ),
+                                    unselectedWidgetColor: Colors.white,
+                                  ),
+                                  child: Checkbox(
+                                      value: checkbox5Value ??= false,
+                                      onChanged: (newValue) async {
+                                        setState(
+                                            () => checkbox5Value = newValue!);
+                                      },
+                                      activeColor: const Color.fromRGBO(
+                                          118, 186, 43, 1.0)),
+                                ),
+                                Theme(
+                                  data: ThemeData(
+                                    checkboxTheme: CheckboxThemeData(
+                                      shape: RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.circular(5),
+                                      ),
+                                    ),
+                                    unselectedWidgetColor: Colors.white,
+                                  ),
+                                  child: Checkbox(
+                                    value: checkbox6Value ??= false,
+                                    onChanged: (newValue) async {
+                                      setState(
+                                          () => checkbox6Value = newValue!);
+                                    },
+                                    activeColor:
+                                        const Color.fromRGBO(118, 186, 43, 1.0),
+                                    checkColor: Colors.white,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
                   ),
                 ),
               ],
-              expansionCallback: (int index, bool isExpanded) {
-                setState(() {
-                  _isExpanded = List.filled(10, false);
-                  _isExpanded[index] = true;
-                });
-              },
             ),
-          )
+          ),
         ],
       ),
     );
