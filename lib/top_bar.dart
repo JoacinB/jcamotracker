@@ -13,7 +13,7 @@ class AppTopBar extends StatelessWidget with PreferredSizeWidget {
         )
       ),
       elevation: 4,
-      title: const Text('JCamo Tracker', style: TextStyle(color: Color.fromRGBO(118, 186, 43, 1.0))),
+      title: const Text('JCamo Tracker', style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold, color: Color.fromRGBO(118, 186, 43, 1.0))),
       backgroundColor: Colors.black,
     );
   }
